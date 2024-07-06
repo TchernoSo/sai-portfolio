@@ -140,8 +140,34 @@ nav{
     font-size: 3rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    text-shadow: 1px 1px 5px rgb(255, 255, 26);
+    text-shadow: 1px 1px 5px #ffff1a;
+    text-transform: uppercase;
+    animation: blur 7.0s ease-out infinite;
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
 }
+
+@keyframes blur {
+    from {
+      text-shadow:0px 0px 10px #fff,
+        0px 0px 10px #ffff1a, 
+        0px 0px 25px #ffff1a,
+        0px 0px 25px #ffff1a,
+        0px 0px 25px #ffff1a,
+        0px 0px 25px #ffff1a,
+        0px 0px 25px #ffff1a,
+        0px 0px 25px #ffff1a,
+        0px 0px 50px #ffff1a,
+        0px 0px 50px #ffff1a,
+        0px 0px 50px #ffff1a,
+        0px 0px 150px #ffff1a,
+        0px 10px 100px #ffff1a,
+        0px 10px 100px #ffff1a,
+        0px 10px 100px #ffff1a,
+        0px 10px 100px #ffff1a,
+        0px -10px 100px #ffff1a,
+        0px -10px 100px #ffff1a;
+    }
+  }
 
 /* Other Content */
 .content {
@@ -219,10 +245,17 @@ h2{
 }
 
 .service-item {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
     padding: 20px;
-    border: 1px solid #ddd;
     border-radius: 5px;
-    margin-bottom: 20px;
+    background-color: #fff; /* Ensure a white background for contrast */
+    margin-bottom: 30px; /* Space out the service items */
+    cursor: pointer;
+    height: 250px;
+}
+.service-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
 }
 
 .service-item h3 {
@@ -233,6 +266,17 @@ h2{
 .service-item p {
     font-size: 1.1rem;
     line-height: 1.6;
+}
+
+/* Add shadow to work items */
+.work-item-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.664), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Add a hover effect to enhance the shadow */
+.work-item-shadow:hover {
+    box-shadow: 0 89px 124px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
 }
 
 /* Contacts and Social Media Section */
