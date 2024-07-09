@@ -114,7 +114,7 @@ nav{
 /* Parallax Section */
 .parallax {
     position: relative;
-    background-image: url('images/Mainsai.jpg'); /* Add your image path here */
+    background-image: url('images/mainone.jpg'); /* Add your image path here */
     height:500px;
     background-attachment: fixed;
     background-position: center;
