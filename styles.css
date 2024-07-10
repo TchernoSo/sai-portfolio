@@ -1,317 +1,300 @@
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
-body{
-    background-color: rgb(251, 222, 4);
-    animation: fadeInAnimation 1s ease-in forwards;
-    font-family: "Maven Pro", sans-serif;
+body {
+  background-color: rgb(251, 222, 4);
+  animation: fadeInAnimation 1s ease-in forwards;
+  font-family: "Maven Pro", sans-serif;
 }
 @keyframes fadeInAnimation {
-    0% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
+  0% {
+    opacity: 0;
   }
-  
 
-nav{
-    background-color: rgb(116, 111, 10);
-    font-family: "Ga Maamli", sans-serif;
+  100% {
+    opacity: 1;
+  }
+}
+
+nav {
+  background-color: rgb(116, 111, 10);
+  font-family: "Ga Maamli", sans-serif;
 }
 
 .navbar-brand {
-    text-shadow: 1px 1px 5px rgb(255, 255, 26); /* Adjust the shadow properties as needed */
+  text-shadow: 1px 1px 5px rgb(255, 255, 26); /* Adjust the shadow properties as needed */
 }
 
 /* Burger menu transformation */
 .navbar-toggler {
-    width: 20px;
-    height: 20px;
-    position: relative;
-    transition: .5s ease-in-out;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: 0.5s ease-in-out;
 }
 
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
-    border: 0;
-    position: relative;
+  outline: none;
+  box-shadow: none;
+  border: 0;
+  position: relative;
 }
 
 .navbar-toggler span {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .toggler-icon {
-    display: block;
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background: #ecd504;
-    border-radius: 1px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #ecd504;
+  border-radius: 1px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
 }
 
 .middle-bar {
-    margin-top: 0px;
+  margin-top: 0px;
 }
-
 
 /* State when the navbar is collapsed */
 
 .navbar-toggler.collapsed .top-bar {
-    position: absolute;
-    top: 0px;
-    transform: rotate(0deg);
+  position: absolute;
+  top: 0px;
+  transform: rotate(0deg);
 }
 
 .navbar-toggler.collapsed .middle-bar {
-    opacity: 1;
-    position: absolute;
-    top: 10px;
-    filter: alpha(opacity=100);
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  filter: alpha(opacity=100);
 }
 
 .navbar-toggler.collapsed .bottom-bar {
-    position: absolute;
-    top: 20px;
-    transform: rotate(0deg);
+  position: absolute;
+  top: 20px;
+  transform: rotate(0deg);
 }
 
 /* when navigation is clicked */
 
 .navbar-toggler .top-bar {
-    top: inherit;
-    transform: rotate(135deg);
+  top: inherit;
+  transform: rotate(135deg);
 }
 
 .navbar-toggler .middle-bar {
-    opacity: 0;
-    top: inherit;
-    filter: alpha(opacity=0);
+  opacity: 0;
+  top: inherit;
+  filter: alpha(opacity=0);
 }
 
 .navbar-toggler .bottom-bar {
-    top: inherit;
-    transform: rotate(-135deg);
+  top: inherit;
+  transform: rotate(-135deg);
 }
-
 
 /* MAIN  */
 /* styles.css */
 
 /* Parallax Section */
 .parallax {
-    position: relative;
-    background-image: url('images/mainone.jpg'); /* Add your image path here */
-    height:500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
+  position: relative;
+  background-image: url("images/mainone.jpg"); /* Add your image path here */
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
 }
 
 .parallax-inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Optional: Add a dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Optional: Add a dark overlay */
 }
 
 .logo-text {
-    font-size: 3rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    text-shadow: 1px 1px 5px #ffff1a;
-    text-transform: uppercase;
-    animation: blur 7.0s ease-out infinite;
-    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-shadow: 1px 1px 5px #ffff1a;
+  text-transform: uppercase;
+  animation: blur 7s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
 }
 
 @keyframes blur {
-    from {
-      text-shadow:0px 0px 10px #fff,
-        0px 0px 10px #ffff1a, 
-        0px 0px 25px #ffff1a,
-        0px 0px 25px #ffff1a,
-        0px 0px 25px #ffff1a,
-        0px 0px 25px #ffff1a,
-        0px 0px 25px #ffff1a,
-        0px 0px 25px #ffff1a,
-        0px 0px 50px #ffff1a,
-        0px 0px 50px #ffff1a,
-        0px 0px 50px #ffff1a,
-        0px 0px 150px #ffff1a,
-        0px 10px 100px #ffff1a,
-        0px 10px 100px #ffff1a,
-        0px 10px 100px #ffff1a,
-        0px 10px 100px #ffff1a,
-        0px -10px 100px #ffff1a,
-        0px -10px 100px #ffff1a;
-    }
+  from {
+    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #ffff1a, 0px 0px 25px #ffff1a,
+      0px 0px 25px #ffff1a, 0px 0px 25px #ffff1a, 0px 0px 25px #ffff1a,
+      0px 0px 25px #ffff1a, 0px 0px 25px #ffff1a, 0px 0px 50px #ffff1a,
+      0px 0px 50px #ffff1a, 0px 0px 50px #ffff1a, 0px 0px 150px #ffff1a,
+      0px 10px 100px #ffff1a, 0px 10px 100px #ffff1a, 0px 10px 100px #ffff1a,
+      0px 10px 100px #ffff1a, 0px -10px 100px #ffff1a, 0px -10px 100px #ffff1a;
   }
+}
 
 /* Other Content */
 .content {
-    padding: 50px 0;
-    text-align: center;
+  padding: 50px 0;
+  text-align: center;
 }
 
-h2{
-    font-family: "Ga Maamli", sans-serif;
-    text-shadow: 1px 1px 5px rgb(255, 255, 26);
+h2 {
+  font-family: "Ga Maamli", sans-serif;
+  text-shadow: 1px 1px 5px rgb(255, 255, 26);
 }
 .content h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    }
-
-.content p {
-    font-size: 1.2rem;
-    max-width: 800px;
-    margin: 0 auto;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
-
+.content p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
 /* Introduction Section */
 .introduction {
-    padding: 50px 0;
-    background-color: #f8f9fa; /* Light grey background */
+  padding: 50px 0;
+  background-color: #f8f9fa; /* Light grey background */
 }
 
 .introduction h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .introduction p {
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-    text-align: center;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-align: center;
 }
 
 /* Work Section */
 .work {
-    padding: 50px 0;
+  padding: 50px 0;
 }
 
 .work h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .work-item {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .work-item img,
 .work-item video {
-    width: 100%;
-    border-radius: 5px;
+  width: 100%;
+  border-radius: 5px;
 }
 
 /* Services Section */
 .services {
-    padding: 50px 0;
+  padding: 50px 0;
 }
 
 .services h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .service-item {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease-in-out;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: #fff; /* Ensure a white background for contrast */
-    margin-bottom: 30px; /* Space out the service items */
-    cursor: pointer;
-    height: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff; /* Ensure a white background for contrast */
+  margin-bottom: 30px; /* Space out the service items */
+  cursor: pointer;
+  height: 250px;
 }
 .service-item:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
 }
 
 .service-item h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
 }
 
 .service-item p {
-    font-size: 1.1rem;
-    line-height: 1.6;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
 /* Add shadow to work items */
 .work-item-shadow {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.664), 0 6px 20px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.664), 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 /* Add a hover effect to enhance the shadow */
 .work-item-shadow:hover {
-    box-shadow: 0 89px 124px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 89px 124px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
 }
 
 /* Contacts and Social Media Section */
 .contacts {
-    padding: 50px 0;
+  padding: 50px 0;
 }
 
 .contacts h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .contacts p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 10px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
 }
 
 .social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .social-icons a {
-    font-size: 2rem;
-    color: #333;
-    margin: 0 10px;
+  font-size: 2rem;
+  color: #333;
+  margin: 0 10px;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .social-icons {
-        font-size: 1.5rem;
-    }
+  .social-icons {
+    font-size: 1.5rem;
+  }
 }
