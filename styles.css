@@ -216,6 +216,22 @@ h2 {
   border-radius: 5px;
 }
 
+
+
+/* Feedback Section  */
+.wrapper {
+  text-align: center;
+  padding: 5rem;
+  grid-gap: 0.2rem;
+}
+
+.avatar img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(136, 135, 135, 0.811);
+}
+
 /* Services Section */
 .services {
   padding: 50px 0;
